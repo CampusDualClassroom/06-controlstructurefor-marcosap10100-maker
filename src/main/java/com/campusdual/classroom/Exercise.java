@@ -12,13 +12,21 @@ public class Exercise {
     //TODO ↓
     // Que imprima como mensaje la suma de los primeros N números positivos
     public static void sumFirstNaturalNumbers(int num) {
+            int suma = 0;
+            for (int i = 0; i <= num; i++) {
+                suma = suma + i;
+            }
+            System.out.println("La suma de los primeros " + num + " números naturales es: " + suma);
+        }
 
-    }
 
     //TODO ↓
     // Que imprima por pantalla los N primeros números positivos
     public static void showFirstNaturalNumbers(int num) {
-
+            for (int i = 0; i <= num; i++) {
+                System.out.print(i + " ");
+            }
+            System.out.println(); // salto de línea al final
+        }
     }
 
-}
